@@ -21,8 +21,8 @@ eureka:
     register-with-eureka: true
     instance-info-replication-interval-seconds: 10
     registry-fetch-interval-seconds: 10
-      service-url:
-        defaultZone: http://localhost:8761/eureka
+    service-url:
+      defaultZone: http://localhost:8761/eureka
   instance:
     appname: jhipster
     instanceId: jhipster:${random.value}

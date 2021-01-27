@@ -45,7 +45,7 @@ eureka:
 
 jhipster:
   clientApp:
-    name: 'jhipster'
+    name: 'Nhipster'
   registry:
     password: admin
   security:

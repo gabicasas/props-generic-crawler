@@ -1,10 +1,12 @@
 
 debugger;
-var executor=async function(){
+var executor= function(){
    
-await page.goto('https://www.google.es')
+page.goto('https://www.google.es').then(response => console.log(response));
  };
 
- function a(){
+/* function a(){
 (async() =>{await executor();}) 
- };
+ };*/
+
+ executor();

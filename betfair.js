@@ -1,7 +1,11 @@
 
-
+debugger;
 var executor=async function(){
-debugger;    
-await page.waitForSelector('#aaaa')
+   
+await page.goto('https://www.google.es')
  };
+
+ function a(){
 (async() =>{await executor();}) 
+ };
+ a();

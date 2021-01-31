@@ -1,12 +1,12 @@
 
-debugger;
-var executor= function(){
-   
-page.goto('https://www.google.es').then(response => console.log(response));
- };
+var asyncMaker=function () { 
+        return async function () {
+            await page.goto('https://www.google.es');
 
-/* function a(){
-(async() =>{await executor();}) 
- };*/
+        };};
 
- executor();
+
+
+
+
+

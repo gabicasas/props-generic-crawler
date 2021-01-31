@@ -6,7 +6,7 @@ var asyncMaker=function () {
         };};
 
 
-
+return asyncMaker;
 
 
 

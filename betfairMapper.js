@@ -12,7 +12,7 @@ if(Array.isArray(dataNormalized) && dataNormalized.length>0 && dataNormalized[0]
         mh.runnerDetails=[];
         let runnerDetails =dataNormalized[i].runnerDetails;
         runnerDetails.forEach(runnerDetail => {
-            let rDetail = new RunnerDetail();
+            let rDetail = {};//new RunnerDetail();
             rDetail.runnerStatus = runnerDetail.runnerStatus;
             rDetail.selectionId = runnerDetail.selectionId;
             //No estoy seguro que esta cuota sea correcta
@@ -20,6 +20,6 @@ if(Array.isArray(dataNormalized) && dataNormalized.length>0 && dataNormalized[0]
             mh.runnerDetails.push(rDetail);
          });
      /* ******************************************************************* */
-        this.marketHRepository.save(mh).then(result => {/* console.log("Saved")*/;});
+        this.marketHRepository.save(mh).then(result => { console.log("Saved");});
     } 
    }

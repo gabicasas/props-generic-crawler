@@ -1,11 +1,11 @@
 
 var asyncMaker=function () { 
         return async function () {
-            await page.goto('https://www.betfair.es/sport/inplay');
+            await this.page.goto('https://www.betfair.es/sport/inplay');
 
-            await page.waitForSelector('#onetrust-accept-btn-handler');
-            await page.click('#onetrust-accept-btn-handler');
-            await  page.keyboard.sendCharacter("a");
+            await this.page.waitForSelector('#onetrust-accept-btn-handler');
+            await this.page.click('#onetrust-accept-btn-handler');
+            await  this.page.keyboard.sendCharacter("a");
 
 
         };};
